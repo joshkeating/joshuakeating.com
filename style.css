@@ -297,11 +297,22 @@ a.index_article_link:active {
 }
 
 .inlinecode {
-
+		font-family: 'Inconsolata', monospace;
+		background-color: #EEEEEE;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+		color: #222
 }
 
 .codeblock {
-	
+		font-family: 'Inconsolata', monospace;
+		background-color: #EEEEEE;
+    box-sizing: border-box;
+    border: 1px solid #A6A6A6;
+    border-radius: 3px;
+    margin: 1rem 0;
+    padding: 0.35rem 0.5rem;
 }
 
 

@@ -6,6 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>-->
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
@@ -53,25 +58,24 @@
 				<div class="article-content">
 					<p>
 						The primary motivation behind redoing this site was to make it scale for mobile correctly.  With the help of bootstrap and media 
-						queries I was able to significantly increase the overall responsiveness.  The site uses good 'ole <code>html</code> and <code>css</code> throughout and  
-						relies on some of the fancier features of <code>css3</code> to pull of the slick <code>transitions</code> on the main page.
+						queries I was able to significantly increase the overall responsiveness.  The site uses good 'ole <code class="inlinecode">html</code> and <code class="inlinecode">css</code> throughout and  
+						relies on some of the fancier features of <code class="inlinecode">css3</code> to pull of the slick <code class="inlinecode">transitions</code> on the main page.
 						<br>
 						<br>
 						This was my first experience working with a web framework and while bootstrap is only front end, I plan on picking up a back end framework 
-						that I can use to build more dynamic web pages. Check out the source code <code>here (include link to github)</code>
+						that I can use to build more dynamic web pages. Check out the source code <code class="inlinecode">here (include link to github)</code>
 					</p>
 					<h4 class="article-subheading">
 						Implementing bootstrap
 					</h4>
 					<p>
-						The easiest way to setup bootstrap is to include the CDN in the page's <code>&lt;head&gt;</code> it looks something like this
-						<pre>
-						&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
-						&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
-						&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
-						</pre>
+						The easiest way to setup bootstrap is to include the CDN in the page's <code class="inlinecode">&lt;head&gt;</code>. It looks something like this
+						<pre class="codeblock">
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;</pre>
+						
 						This will load the framework in from cache when the page is visited and is generally faster than self-hosting bootstrap.
-
 					</p>
 
 					<br>
