@@ -315,7 +315,13 @@ a.index_article_link:active {
     padding: 0.35rem 0.5rem;
 }
 
+.archlinks {
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+	color: #6b6b6b;
 
+}
 	/*------------------------------Media  queries section---------------------------------*/
 
 	/* On small screens, set height to 'auto' for sidenav and grid */
