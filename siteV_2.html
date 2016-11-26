@@ -53,13 +53,24 @@
 				<div class="article-content">
 					<p>
 						The primary motivation behind redoing this site was to make it scale for mobile correctly.  With the help of bootstrap and media 
-						queries I was able to significantly increase the overall responsiveness. 
-
+						queries I was able to significantly increase the overall responsiveness.  The site uses good 'ole <code>html</code> and <code>css</code> throughout and  
+						relies on some of the fancier features of <code>css3</code> to pull of the slick <code>transitions</code> on the main page.
+						<br>
+						<br>
+						This was my first experience working with a web framework and while bootstrap is only front end, I plan on picking up a back end framework 
+						that I can use to build more dynamic web pages. Check out the source code <code>here (include link to github)</code>
 					</p>
 					<h4 class="article-subheading">
-						<!--Overview-->
+						Implementing bootstrap
 					</h4>
 					<p>
+						The easiest way to setup bootstrap is to include the CDN in the page's <code>&lt;head&gt;</code> it looks something like this
+						<pre>
+						&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+						&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+						&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+						</pre>
+						This will load the framework in from cache when the page is visited and is generally faster than self-hosting bootstrap.
 
 					</p>
 
