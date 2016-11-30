@@ -34,23 +34,30 @@ body {
 
 
 /* Remove the navbar's default margin-bottom and rounded borders */
+	
+	/*div.container-fluid > div.navbar-header {
+		display: flex;
+    align-items: center;
+	}*/
+	
 	.navbar {
 	  margin-right: 10%;
 	  margin-left: 10%;
 	  border-radius: 0;
 	  background-color: white;
-	  min-height: 80px;
 	  border-bottom-width: 1px;
 	  border-bottom-color: #3f51b5;
 	}
 
+
 	/*name nav*/
 	.navbar-brand {
 	  font-family: 'Roboto', serif;
-	  color: #222;
-	  font-size: 2.8em;
+	  font-weight: 	500;
+		color: #222;
+	  font-size: 2.65em;
 	  background-color: white;
-	  min-height: 90px;
+		min-height: 90px;
 	  padding-top: 30px;
 	  padding-bottom: 20px;
 	}
@@ -345,15 +352,15 @@ a.index_article_link:active {
 	  	padding-bottom: 15px;
 			font-size: 2.0em;
 			width: 100%;
-			background-color: #3f51b5;;
-			color: white;;
+			background-color: #3f51b5;
+			color: white;
 			border-bottom-width: 1px;
 			border-bottom-color: #3f51b5;
 		}
 
 		a.navbar-brand:link {
 			text-decoration: none;
-			color: #3f51b5;
+			color: white;
 	}
 
 	a.navbar-brand:visited {
