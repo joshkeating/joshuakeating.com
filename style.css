@@ -345,11 +345,35 @@ a.index_article_link:active {
 	  		padding-bottom: 15px;
 			font-size: 2.0em;
 			width: 100%;
-			background-color: white;
-			color: #3f51b5;
+			background-color: #3f51b5;;
+			color: white;;
 			border-bottom-width: 1px;
 			border-bottom-color: #3f51b5;
 		}
+
+		a.navbar-brand:link {
+			text-decoration: none;
+			color: #3f51b5;
+	}
+
+a.navbar-brand:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a.navbar-brand:hover {
+	text-decoration: none;
+	color: white;
+}
+
+a.navbar-brand:active {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
 
 
 		.navbar-header {
