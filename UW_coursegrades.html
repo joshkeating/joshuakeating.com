@@ -54,8 +54,8 @@
 					<p>
                         This was an end of course project that I worked with a team on for Info 201 (Technical Foundations).  Using a dataset comprised of 
                         the anonymized grade data from every class taught at the University of Washington (Seattle) from Autumn 2010 to Winter 2016, we built 
-                        an interactive web application. To manipulate the (realitivly large ~40,000 lines, 20 features) dataset I used R to wrangle and filter the data
-                        into subsets that could be vizualized. We used Shiny to create a reactive user interface that allows the user to filter the  data for a specific class
+                        an interactive web application. To manipulate the (relatively large ~40,000 lines, 20 features) dataset I used R to wrangle and filter the data
+                        into subsets that could be visualized. We used Shiny to create a reactive user interface that allows the user to filter the  data for a specific class
                         and display interactive visualizations.
                     </p>
 
@@ -63,9 +63,9 @@
 						Motivations
 					</h4>
                     <p>
-                        When deciding what kind of dataset to tackel we came to the conclusion that we wanted to work with a dataset that 
-                        would be relevent to current University of Washington students.  After seaching around we stumbled upon this particular dataset
-                        and were intrigued.  It was relevent (because who wants to take a class with an unnessiarily tough teacher) and it was more than complex.
+                        When deciding what kind of dataset to tackle, we came to the conclusion that we wanted to work with a dataset that 
+                        would be relevant to current University of Washington students.  After searching around we stumbled upon this particular dataset
+                        and were intrigued.  It was relevant (because who wants to take a class with an unnecessarily tough teacher) and it was more than complex.
                         Specifically, we were most interested in the distribution and breakdown of the letter grades within each class. The data is anonymized and could 
                         be manipulated to highlight features that are important to current UW students.
                     </p>
@@ -74,16 +74,16 @@
 						How We Built It
 					</h4>
                     <p>
-                       To manipulate the data I used the exellent #dplyr# package which was nested inside a Shiny reactive function. This allowed user inputs 
-                       to filter the data on the fly.  To build the plot I used the #plotly# library which does a great job of creating beautiful interactive visualizations.
-                       We set up a Shiny server thanks to the free hosting that they offer so that anyone with an internet connection can take a look at what we made.
-                       You can check the site <a class="about_links" href="https://joshkeating.shinyapps.io/info-201-coursegrades/">here</a> and the 
-                       source  <a class="about_links" href="https://github.com/joshkeating/info-201-coursegrades">here</a>.
+                       To manipulate the data I used the excellent <a class="about_links" href="https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html">dplyr</a> package which was 
+					   nested inside a Shiny reactive function. This allowed user inputs to filter the data on the fly.  To build the plot I used the  <a class="about_links" href="https://plot.ly/">plotly</a> library which
+					   does a great job of creating beautiful interactive visualizations. We set up a Shiny server thanks to the free hosting that they offer so that anyone with an internet connection can take a look at what we made.
+					   You can check the site <a class="about_links" href="https://joshkeating.shinyapps.io/info-201-coursegrades/">here</a> and the source <a class="about_links" href="https://github.com/joshkeating/info-201-coursegrades">here</a>.
                     </p>
-
+					<img class="img-responsive" src="resources/images/grades-lineplot.png" alt="Grade Distribution Plot">
+					<br>
+					<br>
 				</div>
 
-				
 			</article>
 
 			</div>
