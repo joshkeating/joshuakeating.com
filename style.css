@@ -224,7 +224,7 @@ body {
 	margin-top: 10px;
 }
 
-/*++++++++++++++++++projects_index style+++++++++++++++++++++++*/
+/*---------------projects_index--------------*/
 
 .month_segment {
 	list-style-type: none;
@@ -278,6 +278,8 @@ a.index_article_link:active {
 	display: inline-block;
 	color: #6b6b6b;
 }
+
+
 
 .inlinecode {
 		font-family: 'Inconsolata', monospace;
