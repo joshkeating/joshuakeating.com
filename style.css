@@ -36,7 +36,6 @@ body {
 	  border-bottom-color: #3f51b5;
 	}
 
-
 	/*name nav*/
 	.navbar-brand {
 	  font-family: 'Roboto', serif;
@@ -49,8 +48,6 @@ body {
 	  padding-bottom: 20px;
 	}
 
-	
-	
 	/*right nav*/
 	.nav {
 	  background-color: white;
