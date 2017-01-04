@@ -1,5 +1,5 @@
 
-/*------------Sticky footer stuff----------*/
+/*------------Footer----------*/
 html {
   position: relative;
   min-height: 100%;
@@ -14,30 +14,18 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 .footer_text {
-	text-align: center;
+		text-align: center;
     padding: 0 20px;
     margin: 20px;
     display: flex;
     justify-content: center; 
     align-items: center;
+		color: #6b6b6b;
 }
-
-
-/*------------Sticky footer stuff----------*/
-
-
-
-
-
-/* Remove the navbar's default margin-bottom and rounded borders */
-	
-	/*div.container-fluid > div.navbar-header {
-		display: flex;
-    align-items: center;
-	}*/
+/*------------Footer----------*/
 	
 	.navbar {
 	  margin-right: 10%;
