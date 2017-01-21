@@ -59,12 +59,40 @@
 						The Setup
 					</h4>
 					<p>
-                        You'll need a bootable flash drive loaded with a current version of of the ISO image.  If you’re on Windows it’s also a good idea to disable Secure Boot with UEFI enabled.
+                        You'll need a bootable flash drive loaded with a current version of of the ISO image.  If you’re on Windows it’s also a good idea to disable Secure Boot with UEFI enabled.  I will also assume that you are using a SATA based hard drive, in the case that your drive is NVMe based keep in mind that the partition naming scheme will differ i.e. <code class="inlinecode">/dev/nmve0</code> vs <code class="inlinecode">/dev/sda</code>.
 					</p>
+					<h4 class="article-subheading">
+						Partitioning
+					</h4>
+					<p>
+						First we are going to zero out the disk, this is done to ensure that the disk is properly wiped and prepared for encryption.  We zero-fill the disk by writing a zero byte to every addressable location on the disk using the /dev/zero stream.
 
-					<br>
-					<br>
+												<pre class="codeblock">
+$ cryptsetup open --type plain /dev/sdXY container --key-file /dev/random
+$ dd if=/dev/zero of=/dev/mapper/container status=progress</pre>
 
+						We're going to use the GPT partition scheme since we’re on a UEFI system. 
+
+						<pre class="codeblock">
+$ gdisk /dev/sda</pre>
+						
+						Then we'll set up the ESP and root partitions. There are a number of partitioning tools that you can use, here I will use fdisk. The ESP partition should have a size of 512M and use the partition table type of EFI System  (EFI System in fdisk or EF00 in gdisk) . We can fill the rest of the space with the root partition.
+
+						<pre class="codeblock">
+$ fdisk /dev/sda
+
+$ mkfs.fat -F32 -nESP /dev/sda1
+
+$ mkfs.ext4 /dev/sda2</pre>
+
+					</p>
+					<h4 class="article-subheading">
+						LUKS disk encryption
+					</h4>
+					<p>
+
+						
+					</p>
 				</div>
 
 			</article>
