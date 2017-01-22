@@ -136,7 +136,26 @@ $ pacstrap /mnt base base-devel</pre>
 $ genfstab -U /mnt >> /mnt/etc/fstab
 $ arch-chroot /mnt /bin/bash</pre>
 
-						
+						Next we're going to want uncomment <code class="inlinecode">en_US.UTF-8</code> to set up UTF-8 character encoding. We also want to generate and create the locale.
+
+						<pre class="codeblock">
+$ vim /etc/locale.gen
+$ locale-gen
+$ cat >>/etc/locale.conf
+> LANG=en_US.UTF-8</pre>
+
+						Next set up your timezone and sync the hardware clock
+
+						<pre class="codeblock">
+$ ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+$ hwclock --systohc --utc</pre>
+
+						Finally we need to configure and generate a new initial ramdisk environment. Remember to take special care to set <code class="inlinecode">encrypt</code> and <code class="inlinecode">lvm</code> to be in front of <code class="inlinecode">filesystem</code> in <code class="inlinecode">HOOKS=”..”</code>.
+
+						<pre class="codeblock">
+$ vim /etc/mkinitcpio.conf
+$ mkinitcpio -p linux</pre>
+
 					</p>
 				</div>
 
