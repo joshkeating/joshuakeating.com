@@ -80,9 +80,7 @@ $ gdisk /dev/sda</pre>
 
 						<pre class="codeblock">
 $ fdisk /dev/sda
-
 $ mkfs.fat -F32 -nESP /dev/sda1
-
 $ mkfs.ext4 /dev/sda2</pre>
 
 					</p>
@@ -90,6 +88,53 @@ $ mkfs.ext4 /dev/sda2</pre>
 						LUKS disk encryption
 					</h4>
 					<p>
+						I use LUKS or Linux Unified Key Setup to encrypt my drive for two main reasons, further partitioning is super easy with LVM and it allows for single key authentication to unlock all volumes.  The only caveat to this setup in the vulnerability of the bootloader. Though there are steps you can take to secure your boot I will not be covering them here.
+
+						<pre class="codeblock">
+$ cryptsetup luksFormat /dev/sda2
+$ cryptsetup open --type luks /dev/sda2 lvm</pre>
+					</p>
+					<h4 class="article-subheading">
+						LVM filesystem management
+					</h4>
+					<p>
+						Logical Volume Management uses the kernel's device-mapper feature to create "virtual partitions" that make expanding or shrinking partitions ridiculously easy. LVM also supports snapshots which are an efficient way perform backups. I prefer to keep my partition scheme relatively simple with just root, home, and swap partitions. You can call your physical volume whatever you like, here I call it VirtVol.
+
+						<pre class="codeblock">
+$ pvcreate /dev/mapper/lvm
+$ vgcreate VirtVol /dev/mapper/lvm
+
+$ lvcreate -L 40G VirtVol -n root
+$ lvcreate -L 8G VirtVol -n swap
+$ lvcreate -l 100%FREE VirtVol -n home
+
+$ mkfs.ext4 /dev/mapper/VirtVol-root
+$ mkfs.ext4 /dev/mapper/VirtVol-home
+$ mkswap /dev/mapper
+
+$ mount /dev/mapper/VirtVol-root /mnt
+$ mkdir /mnt/home
+$ mount /dev/mapper/VirtVol-home /mnt/home
+$ swapon /dev/mapper/VirtVol-swap
+</pre>
+					</p>
+					<h4 class="article-subheading">
+						Arch Install
+					</h4>
+					<p>
+						With the parations all setup now we can install the base system.  First we’re going to mount the boot partition and then install the base packages.
+
+						<pre class="codeblock">
+$ mkdir /mnt/boot
+$ mount /dev/sda1 /mnt/boot
+
+$ pacstrap /mnt base base-devel</pre>
+
+						Now we generate our filesystem information, and chroot into our new installation.
+
+						<pre class="codeblock">
+$ genfstab -U /mnt >> /mnt/etc/fstab
+$ arch-chroot /mnt /bin/bash</pre>
 
 						
 					</p>
