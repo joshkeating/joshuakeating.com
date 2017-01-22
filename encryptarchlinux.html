@@ -53,7 +53,7 @@
 
 				<div class="article-content">
 					<p>
-                        After deciding to say sayonara to my previous dual booted system (Windows and Arch) and go 100% Arch, I came to the realization that this would be a great time to be proactive in securing my data and do some full disk encryption.  This will be a brief guide on installing Arch Linux on a new system using LUKS[link] for full-disk encryption and LVM[link] for volume management. My motivations for writing this guide are not entirely altruistic, this is documentation for future me as much as it is a guide for anyone who stumbles upon this article.
+                        After deciding to say sayōnara to my previous dual booted system (Windows and Arch) and go 100% Arch, I came to the realization that this would be a great time to be proactive in securing my data and do some full disk encryption.  This will be a brief guide on installing Arch Linux on a new system using <a class="about_links" href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system">LUKS</a> for full-disk encryption and <a class="about_links" href="https://wiki.archlinux.org/index.php/LVM">LVM</a> for volume management. My motivations for writing this guide are not entirely altruistic - this is documentation for future me as much as it is a guide for anyone who stumbles upon this article.
 					</p>
 					<h4 class="article-subheading">
 						The Setup
@@ -156,7 +156,16 @@ $ hwclock --systohc --utc</pre>
 $ vim /etc/mkinitcpio.conf
 $ mkinitcpio -p linux</pre>
 
+						Here's a look at what my partition scheme looks like.
+						<br>
+						<br>
+						<img class="img-responsive" src="resources/images/lsblk-encrypt.png" alt="partition scheme">
 					</p>
+
+					
+
+
+
 					<h4 class="article-subheading">
 						systemd-boot
 					</h4>
@@ -184,6 +193,7 @@ options cryptdevice=UUID=(UUID goes here):VirtVol root=/dev/mapper/VirtVol-root 
 					</p>
 
 					Alright that's it! Now you can <code class="inlinecode">exit</code>, reboot, and if you did everything right be greeted with a login shell.
+					<br>
 					<br>
 					In my next I'll probably do a writeup about setting up Arch in a usable configuration. 
 
