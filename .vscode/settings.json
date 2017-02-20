@@ -2,5 +2,6 @@
 {
     "window.zoomLevel": 1.5,
     "editor.fontSize": 15,
-    "editor.fontFamily": "'Source Code Pro', 'Courier New', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": "'Roboto Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "java.home": "/usr/lib/jvm/java-8-openjdk"
 }
