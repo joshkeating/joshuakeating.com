@@ -318,7 +318,7 @@ a.index_article_link:active {
 
 		ul.nav.navbar-nav.navbar-right {
 			margin-top: 10px;
-			font-size: 1.5em;
+			font-size: 1.4em;
 			min-height: 30px;
 			text-align: center;
 		}
@@ -341,6 +341,11 @@ a.index_article_link:active {
 			display: inline-block;
 		}
 
+		.nav > li > a:hover {
+			font-weight: bold;
+			background-color: white;
+	  	color: black;
+		}
 
 
 		.col-sm-8 {
