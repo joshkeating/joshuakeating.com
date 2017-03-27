@@ -313,33 +313,32 @@ a.index_article_link:active {
 
 		.navbar {
 			margin: 0px;
+			border-bottom-color: white;
 		}
 
-		.nav {
-
-			text-align: left;
-			padding: 0px;
+		ul.nav.navbar-nav.navbar-right {
+			margin-top: 10px;
 			font-size: 1.5em;
-			background-color: green;
-
+			min-height: 30px;
+			text-align: center;
 		}
 
 		.navbar-right {
 			list-style-type: none;
     	margin: 0;
     	padding: 0;
-    	overflow: hidden;
+			text-align: center;
 		}
 
 		.navbar-nav {
 			list-style-type: none;
     	margin: 0;
     	padding: 0;
-    	overflow: hidden;
+			text-align: center;
 		}
 
-		li {
-			float: left;
+		ul.nav li {
+			display: inline-block;
 		}
 
 
