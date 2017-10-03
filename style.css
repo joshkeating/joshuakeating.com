@@ -6,7 +6,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 .footer {
   position: absolute;
@@ -28,12 +28,13 @@ body {
 /*------------Footer----------*/
 	
 	.navbar {
-	  margin-right: 10%;
-	  margin-left: 10%;
+	  margin-right: auto;
+	  margin-left: auto;
 	  border-radius: 0;
 	  background-color: white;
 	  border-bottom-width: 1px;
-	  border-bottom-color: #3f51b5;
+		border-bottom-color: #3f51b5;
+		max-width: 940px;
 	}
 
 	/*name nav*/
@@ -47,6 +48,7 @@ body {
 	  padding-top: 30px;
 	  padding-bottom: 20px;
 	}
+
 
 	/*right nav*/
 	.nav {
@@ -69,12 +71,25 @@ body {
 	}
 
 	.col-sm-8 {
-	  text-align: left;
+		width: auto;
+		text-align: left;
+		max-width: 940px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	.row.content {
+		width: 100%;
+		max-width: 940px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 	/* Set gray background color and 100% height */
 	.sidenav {
-	  height: 100%;
+		height: 100%;
 	}
 
 	.about_body {
@@ -360,6 +375,7 @@ a.index_article_link:active {
 
 
 		.col-sm-8 {
+			width: auto;
 			font-size: 85%;
 			padding-top: 0px;
 		}
@@ -407,6 +423,7 @@ a.index_article_link:active {
 
 		.row.content {
 			height:auto;
+
 		}
 
 		
