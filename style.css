@@ -1,3 +1,7 @@
+/* 
+	old colors:
+	#037bd6 - blue
+*/
 
 /*------------Footer----------*/
 html {
@@ -33,7 +37,7 @@ body {
 	  border-radius: 0;
 	  background-color: white;
 	  /* border-bottom-width: 1px;
-		border-bottom-color: #3f51b5; */
+		border-bottom-color: #037bd6; */
 		max-width: 940px;
 		margin-top: 10px;
 		margin-bottom: 0px;
@@ -58,8 +62,8 @@ body {
 	.nav {
 	  background-color: white;
 		min-height: 80px;
-		font-family: 'Roboto', serif;
-	  font-weight: 	400;
+		font-family: 'Lora', serif;
+	  font-weight: 	700;
 	  font-size: 1.56em;
 	  padding-top: 20px;
 		padding-bottom: 20px;
@@ -80,7 +84,7 @@ body {
 		border-bottom: 2px solid black;
 		background-color: white;
 		color: black;
-	  /* background-color: #3f51b5; */
+	  /* background-color: #037bd6; */
 	  /* color: white; */
 	}
 
@@ -117,7 +121,7 @@ body {
 	}
 
 	a:hover {
-		color: #3f51b5;
+		color: #037bd6;
 	}
 
 	a:active {
@@ -125,28 +129,28 @@ body {
 	}
 
 	.about_links {
-		color: #3f51b5;
+		color: #037bd6;
 		font-weight: bold;
 	}
 
 	a.about_links:link {
 		text-decoration: none;
-		color: #3f51b5;
+		color: #037bd6;
 	}
 
 	a.about_links:visited {
 		text-decoration: none;
-		color: #3f51b5;
+		color: #037bd6;
 	}
 
 	a.about_links:hover {
 		text-decoration: none;
-		color: #828fd4;
+		color: #2ba2fc;
 	}
 
 	a.about_links:active {
 		text-decoration: none;
-		color: #3f51b5;
+		color: #037bd6;
 	}
 
 	.about_header {
@@ -185,7 +189,12 @@ body {
 
 
 	.title_link {
-	  color: #3f51b5;
+	  color: #037bd6;
+	  text-decoration: none;
+	}
+
+	a.title_link:hover {
+	  color: #2ba2fc;
 	  text-decoration: none;
 	}
 
@@ -193,7 +202,9 @@ body {
 		font-family: 'Open Sans', sans-serif;
 	  font-size: 1.25em;
 		color: #6b6b6b;		
-	  display: inline;
+		display: inline;
+		border-bottom: 2px;
+		border-bottom-color: white;		
 	}
 
 	.article_link_body {
@@ -211,20 +222,20 @@ body {
 	  cursor: pointer;
 	  background-color: white;
 	  color: #222;
-	  border: 1.4px solid #3f51b5;
+	  border: 1.4px solid #037bd6;
 	  text-align: center;
 	  display:inline;
 	  padding: 9px;
 	}
 
 		a.button:hover {
-		background-color: #3f51b5;
+		background-color: #037bd6;
 		color: white;
 	}
 
 	p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.0em;
+	font-size: 0.9em;
 	padding-bottom: 10px;
 }
 
@@ -302,29 +313,29 @@ body {
 		font-family: 'Roboto', serif;
 		font-size: 1.5em;
 		display: block;
-		color: #3f51b5;
+		color: #037bd6;
 		display: inline-block;
 		padding-right: 15px;
 }
 
 a.index_article_link:link {
 	text-decoration: none;
-	color: #3f51b5;
+	color: #037bd6;
 }
 
 a.index_article_link:visited {
 	text-decoration: none;
-	color: #3f51b5;
+	color: #037bd6;
 }
 
 a.index_article_link:hover {
 	text-decoration: none;
-	color: #828fd4;
+	color: #2ba2fc;
 }
 
 a.index_article_link:active {
 	text-decoration: none;
-	color: #3f51b5;
+	color: #037bd6;
 }
 
 .article_date {
@@ -347,7 +358,7 @@ a.index_article_link:active {
 
 .codeblock {
 		font-family: 'Inconsolata', monospace;
-		font-size: 1.0em;
+		font-size: 0.9em;
 		background-color: #EEEEEE;
     box-sizing: border-box;
     border: 1px solid #A6A6A6;
@@ -421,10 +432,10 @@ a.index_article_link:active {
 	  	padding-bottom: 15px;
 			font-size: 1.8em;
 			width: 100%;
-			background-color: #3f51b5;
+			background-color: #037bd6;
 			color: white;
 			border-bottom-width: 1px;
-			border-bottom-color: #3f51b5;
+			border-bottom-color: #037bd6;
 		}
 
 		a.navbar-brand:link {
@@ -489,8 +500,9 @@ a.index_article_link:active {
 		}
 	}
 
+	/* home screen link animation */
 	/*disables hover animation for touch devices*/
-	@media screen and (min-width: 769px) {
+	/* @media screen and (min-width: 769px) {
 		.post_title span {
 			cursor: pointer;
 			display: inline-block;
@@ -515,4 +527,4 @@ a.index_article_link:active {
 		opacity: 1;
 		left: 20;
 		}
-	}
+	} */
