@@ -1,2 +1,3 @@
 # Dont need these things in the repo
 .vscode
+.vscode/settings.json
