@@ -213,10 +213,10 @@ body {
 	  padding-top: 10px;
 	}
 
-	a.button {
+	/* a.button {
 	  font-family: 'Roboto', serif;
 	  font-size: 1.5em;
-	  -webkit-transition-duration: 0.4s; /* Safari */
+	  -webkit-transition-duration: 0.4s;
 	  text-decoration: none;
 	  transition-duration: 0.4s;
 	  cursor: pointer;
@@ -231,6 +231,42 @@ body {
 		a.button:hover {
 		background-color: #037bd6;
 		color: white;
+	} */
+
+	a.projects-link {
+		font-family: 'Lora', serif;
+	  font-weight: 700;
+		color: #222;
+		font-size: 1.8em;
+	}
+
+
+@media screen and (min-width: 769px) {
+		.projects-link span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.3s;
+			
+		}
+
+		.projects-link span:after {
+			content: '>';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: 5px;
+			transition: 0.30s;
+		}
+
+		.projects-link:hover span {
+			padding-right: 50px;
+		}
+
+		.projects-link:hover span:after {
+		opacity: 1;
+		right: 80;
+		}
 	}
 
 	p {
