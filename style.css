@@ -194,7 +194,8 @@ body {
 
 	.post_tags {
 		font-family: 'Open Sans', sans-serif;
-	  font-size: 1.2em;
+		font-size: 1.2em;
+		font-style: italic;
 		color: #6b6b6b;
 		order: 1;
 		flex-grow:1;
@@ -240,6 +241,12 @@ body {
 
 .article-header {
 		padding-top: 10px;
+}
+
+.title_underline {
+	width: 100%;
+	border-bottom: 1px solid #d1d1d1;
+	margin-bottom: 5px;
 }
 
 .article-title {
