@@ -3,7 +3,7 @@
 	#037bd6 - blue
 */
 
-/*------------Footer----------*/
+/*------------Begin Footer----------*/
 html {
   position: relative;
   min-height: 100%;
@@ -29,7 +29,7 @@ body {
     align-items: center;
 		color: #6b6b6b;
 }
-/*------------Footer----------*/
+/*------------End Footer----------*/
 	
 	.navbar {
 	  margin-right: auto;
@@ -43,7 +43,7 @@ body {
 		margin-bottom: 0px;
 	}
 
-	/*name nav*/
+	/* name nav */
 	.navbar-brand {
 	  font-family: 'Lora', serif;
 	  font-weight: 	700;
@@ -53,10 +53,7 @@ body {
 		min-height: 90px;
 	  padding-top: 35px;
 		padding-bottom: 20px;
-
-		/* border-bottom: 2px solid black; */
 	}
-
 
 	/*right nav*/
 	.nav {
@@ -67,8 +64,6 @@ body {
 	  font-size: 1.56em;
 	  padding-top: 20px;
 		padding-bottom: 20px;
-		
-		
 	}
 
 	.nav > li > a {
@@ -80,7 +75,6 @@ body {
 	}
 
 	.nav > li > a:hover {
-
 		border-bottom: 2px solid black;
 		background-color: white;
 		color: black;
@@ -95,8 +89,6 @@ body {
 		margin-right: auto;
 		margin-left: auto;
 	}
-
-
 
 	.row.content {
 		width: 100%;
@@ -213,60 +205,17 @@ body {
 	  padding-top: 10px;
 	}
 
-	/* a.button {
-	  font-family: 'Roboto', serif;
-	  font-size: 1.5em;
-	  -webkit-transition-duration: 0.4s;
-	  text-decoration: none;
-	  transition-duration: 0.4s;
-	  cursor: pointer;
-	  background-color: white;
-	  color: #222;
-	  border: 1.4px solid #037bd6;
-	  text-align: center;
-	  display:inline;
-	  padding: 9px;
-	}
-
-		a.button:hover {
-		background-color: #037bd6;
-		color: white;
-	} */
-
 	a.projects-link {
-		font-family: 'Lora', serif;
-	  font-weight: 700;
-		color: #222;
-		font-size: 1.8em;
+		font-family: 'Open Sans', sans-serif;
+		font-style: italic;
+	  font-weight: 400;
+		color: #037bd6;
+		font-size: 1.9em;
 	}
 
-
-@media screen and (min-width: 769px) {
-		.projects-link span {
-			cursor: pointer;
-			display: inline-block;
-			position: relative;
-			transition: 0.3s;
-			
-		}
-
-		.projects-link span:after {
-			content: '>';
-			position: absolute;
-			opacity: 0;
-			top: 0;
-			right: 5px;
-			transition: 0.30s;
-		}
-
-		.projects-link:hover span {
-			padding-right: 50px;
-		}
-
-		.projects-link:hover span:after {
-		opacity: 1;
-		right: 80;
-		}
+	a.projects-link:hover {
+		color: #2ba2fc;
+	  text-decoration: none;
 	}
 
 	p {
@@ -381,8 +330,6 @@ a.index_article_link:active {
 	color: #6b6b6b;
 }
 
-
-
 .inlinecode {
 		font-family: 'Inconsolata', monospace;
 		background-color: #EEEEEE;
@@ -410,7 +357,7 @@ a.index_article_link:active {
 	color: #6b6b6b;
 
 }
-	/*------------------------------Media  queries section---------------------------------*/
+	/*--------------------Begin media queries section--------------------*/
 
 	/* On small screens, set height to 'auto' for sidenav and grid */
 	@media screen and (max-width: 768px) {
@@ -451,6 +398,9 @@ a.index_article_link:active {
 	  	color: black;
 		}
 
+		.nav > li > a {
+			margin-left: 0px;;
+		}
 
 		.col-sm-8 {
 			width: auto;
@@ -458,7 +408,6 @@ a.index_article_link:active {
 			padding-top: 0px;
 		}
 
-		/*Look at maybe makeing this a different color*/
 		.navbar-brand {
 			text-align: center;
 			height: auto;
@@ -477,22 +426,22 @@ a.index_article_link:active {
 		a.navbar-brand:link {
 			text-decoration: none;
 			color: white;
-	}
+		}
 
-	a.navbar-brand:visited {
-		text-decoration: none;
-		color: white;
-	}
+		a.navbar-brand:visited {
+			text-decoration: none;
+			color: white;
+		}
 
-	a.navbar-brand:hover {
-		text-decoration: none;
-		color: white;
-	}
+		a.navbar-brand:hover {
+			text-decoration: none;
+			color: white;
+		}
 
-	a.navbar-brand:active {
-		text-decoration: none;
-		color: white;
-	}
+		a.navbar-brand:active {
+			text-decoration: none;
+			color: white;
+		}
 
 		.navbar-header {
 			text-align: center;
@@ -504,7 +453,6 @@ a.index_article_link:active {
 
 		}
 
-		
 		.about_header {
 			padding-bottom: 20px;
 			font-size: 0.5em
@@ -534,33 +482,60 @@ a.index_article_link:active {
 				display: block;
 				margin-bottom: 1rem;
 		}
+
 	}
 
-	/* home screen link animation */
-	/*disables hover animation for touch devices*/
-	/* @media screen and (min-width: 769px) {
-		.post_title span {
-			cursor: pointer;
-			display: inline-block;
-			position: relative;
-			transition: 0.35s;
-		}
+/*--------------------End media queries section--------------------*/
 
-		.post_title span:after {
-			content: '/';
-			position: absolute;
-			opacity: 0;
-			top: 0;
-			left: 0px;
-			transition: 0.20s;
-		}
+/*------------Begin unused css section----------*/
 
-		.post_title:hover span {
-			padding-left: 20px;
-		}
+/* home screen link animation */
+/* @media screen and (min-width: 769px) {
+	.post_title span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.35s;
+	}
 
-		.post_title:hover span:after {
-		opacity: 1;
-		left: 20;
-		}
+	.post_title span:after {
+		content: '/';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		left: 0px;
+		transition: 0.20s;
+	}
+
+	.post_title:hover span {
+		padding-left: 20px;
+	}
+
+	.post_title:hover span:after {
+	opacity: 1;
+	left: 20;
+	}
+} */
+
+/* button css */
+		/* a.button {
+	  font-family: 'Roboto', serif;
+	  font-size: 1.5em;
+	  -webkit-transition-duration: 0.4s;
+	  text-decoration: none;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	  background-color: white;
+	  color: #222;
+	  border: 1.4px solid #037bd6;
+	  text-align: center;
+	  display:inline;
+	  padding: 9px;
+	}
+
+		a.button:hover {
+		background-color: #037bd6;
+		color: white;
 	} */
+
+	/*------------End unused css section----------*/
