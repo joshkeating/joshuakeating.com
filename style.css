@@ -376,7 +376,7 @@ a.index_article_link:active {
 
 		.navbar {
 			margin: 0px;
-			border-bottom-color: white;
+			border: 0px;
 		}
 
 		ul.nav.navbar-nav.navbar-right {
