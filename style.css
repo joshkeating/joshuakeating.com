@@ -28,7 +28,7 @@ body {
 }
 /*------------End Footer----------*/
 	
-.navbar {
+.navbar {	
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 0;
@@ -186,7 +186,16 @@ a.about_links:active {
   }
 
 .article_container {
+	background-color: #ffffff;
 	padding: 4px 16px;
+}
+
+.article_body_container {
+	background-color: #ffffff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 2em 3em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 
@@ -284,9 +293,7 @@ p {
 
 /*---------------------------article-content---------------------------------------*/
 
-.article-header {
-		padding-top: 10px;
-}
+
 
 .title_underline {
 	width: 100%;
@@ -561,9 +568,6 @@ a.index_article_link:active {
 			text-decoration: none;
 		}
 
-		.article-header {
-				padding-top: 0px;
-		}
 
 		.article-date {
 				display: block;
