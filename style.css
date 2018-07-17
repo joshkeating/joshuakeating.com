@@ -264,16 +264,16 @@ a.title_link:hover {
 
 
 a.projects-link {
-	font-family: 'Open Sans', sans-serif;
-	font-style: italic;
-	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
 	color: #0A84EF;
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 
 a.projects-link:hover {
-	color: #2ba2fc;
-	text-decoration: none;
+	text-decoration-line: underline;
+	color: #0A84EF;
+
 }
 
 p {
@@ -526,6 +526,12 @@ a.index_article_link:active {
 
 		.row.content {
 			height:auto;
+
+		}
+
+		/* display shadow for links on mobile */
+		.article_link_target {
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
 
 		}
 
