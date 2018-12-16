@@ -92,6 +92,7 @@ p.footer_text {
 	float: left;
 	height: 50px;
 	padding: 15px;
+	border-radius: 8px;
   }
   
   .nav-title:hover {
@@ -132,8 +133,8 @@ p.footer_text {
 	transition-delay: 0s;
 	transition-timing-function: ease;
 	margin-left: 15px;
-
 	line-height: 20px;
+	border-radius: 5px;
 	position: relative;
 	display: block;
 	padding: 15px;
