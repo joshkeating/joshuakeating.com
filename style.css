@@ -610,7 +610,7 @@ a.index_article_link:active {
 	.nav-header {
 		text-align: center;
 		height: auto;
-		width: 100%;
+		float: none;
 	}
 
 	.nav-title {
@@ -684,10 +684,6 @@ a.index_article_link:active {
 	.nav-links > li > a {
 		margin-left: 0px;
 	}
-
-
-
-
 
 
 	.post_container {
