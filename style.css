@@ -515,6 +515,15 @@ a.index_article_link:active {
 
 }
 
+/* make preformatted code wrap correctly */
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 @media screen and (max-width: 967px) {
 	nav.nav {
 		padding-right: 15px;
@@ -638,9 +647,13 @@ a.index_article_link:active {
 		font-size: 0.5em
 	}
 
+	div.post_metadata_container {
+		flex-direction: column;
+	}
+
 	.post_title {
-	font-size: 1.9em;
-	margin-right: 10px;
+		font-size: 1.9em;
+		margin-right: 10px;
 	}
 
 	.metadata {
@@ -659,6 +672,9 @@ a.index_article_link:active {
 		text-decoration: none;
 	}
 
+	.article_body_container {
+		margin-top: 10px;
+	}
 
 	.article-date {
 			display: block;
