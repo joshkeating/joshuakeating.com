@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- cdns -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<!-- favicons and icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="./resources/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./resources/icons/android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon-16x16.png">
 	<!-- url color for android -->
@@ -26,161 +23,188 @@
 
 <body>
 
-	<nav class="navbar">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Josh Keating</a>
-			</div>
-			<div class="collapse in" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about.html">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="https://github.com/joshkeating">Github</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid text-center">
-		<div class="row content">
-			
-			<div class="col-sm-8">
-
-				<article class="article_body_container">
-				<header>
-					<div class="article-header">
-						<h2 class="article-title">
-							Arch Linux
-						</h2>
-						<div class="title_underline"></div>
-						<p class="article-date">
-							August 12th, 2016
-						</p>	
-					</div>
-				</header>
-
-				<div class="article-content">
-					<p>
-						Arch Linux is the GNU/Linux distribution (distro) that I use as my main operating system. Arch is a minimal and lightweight distro that can be
-						 configured by the user to suit their preferences. This is at odds with some of the other popular distributions (Ubuntu) which tend to feature more 
-						 streamlined installations and pre-configured environments.
-						 <br>
-						 <br>
-						 Arch functions on a rolling release system of updates - meaning it gets updates to packages and the kernel much faster than other distros. 
-						 Because of this it is often referred to as the “bleeding edge distro”. Thankfully, Arch comes with its own package manager which makes managing 
-						 and maintaining your installed packages simple and easy. Arch is a great distro for someone who is comfortable with how Linux works and likes the 
-						 “Do it yourself approach”.
-					</p>
-					<h4 class="article-subheading">
-						Reasons For Chooseing Arch
-					</h4>
-					<p>
-						I chose Arch because I wanted something fast and lightweight to run on my laptop (XPS 13). I really liked the idea of a minimal base system that could then
-						 be configured to my own ideal environment at an incredibly granular level. Forsaking the ease of use that a distro built around a GUI provides has increased 
-						 my productivity in the terminal and taught me more about how my system functions - which has been great. The documentation that the <a class="about_links" href="https://wiki.archlinux.org/">wiki</a> provides 
-						 is some of the best out there for Linux distros so that was another major influence in my decision.
-						 <br>
-						 <br>
-						 Pacman is a great package manager that couples simple binary packages with an easy-to-use package build system. This combined with the <code class="inlinecode">[core]</code> repositories,
-						 the <a class="about_links" href="https://aur.archlinux.org/">AUR</a> (Arch Linux User Repository), and the ability to easily “roll your own” packages makes for a fantastic system of managing and customizing packages, scripts, and repositories.
-						 <br>
-						 <br>
-						 Arch’s power and simplicity appealed to me and although the initial install was <strike>a failure</strike> difficult, it has been a great operating system for more than a year. 
-					</p>
-					<h4 class="article-subheading">
-						My Setup
-					</h4>
-					<img class="img-responsive" src="resources/images/nov_desktop_scrot.png" alt="desktop screenshot">
-					<p>
-						<br>
-						 <br>
-						Pictured above is what one of my desktops currently looks like. I’ve tried to keep my install fairly lightweight, I use <a class="about_links" href="https://i3wm.org/">i3</a> for my windows manager, <a class="about_links" href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> for my terminal 
-						emulator, and <a class="about_links" href="http://ranger.nongnu.org/">ranger</a> for my file browser.  I get 7-8 hours of medium to heavy usage which is pretty solid and comparable to how it performs in Windows.  Here are my 
-						<a class="about_links" href="https://github.com/joshkeating/dotfiles">dotfiles</a> if you are interested.
-					</p>
-					<h4 class="article-subheading">
-						Favorite Packages
-					</h4>
-					
-					<ul class="archlinks">
-						<li >
-						<a class="about_links" href="https://i3wm.org/">i3</a> - A great tiling windows manager
-						</li>
-						<li>
-						<a class="about_links" href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> - terminal emulator
-						</li>
-						<li>
-						<a class="about_links" href="http://ranger.nongnu.org/">ranger</a> - file browser
-						</li>
-						<li>
-						<a class="about_links" href="https://davedavenport.github.io/rofi/">rofi</a> - application launcher, dmenu replacement
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/visual-studio-code/">Visual Studio Code</a> - text editor
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/yaourt/">yaourt</a> - pacman frontend
-						</li>
-						<li>
-						<a class="about_links" href="https://www.archlinux.org/packages/community/any/intellij-idea-community-edition/">Intellij IDE</a> - best IDE
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/sublime-text-dev/">Sublime Text 3</a> - text editor
-						</li>
-						<li>
-						<a class="about_links" href="https://cmus.github.io/">cmus</a> - terminal music player
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/gpmdp/">gpmdp</a> - Google Play desktop music player
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/spotify/">Spotify</a> - music streaming platform
-						</li>
-						<li>
-						<a class="about_links" href="https://www.archlinux.org/packages/community/x86_64/zathura/">zathura</a> - lightweight pdf viewer
-						</li>
-						<li>
-						<a class="about_links" href="https://wiki.archlinux.org/index.php/feh">feh</a> - lightweight image viewer
-						</li>
-						<li>
-						<a class="about_links" href="https://www.archlinux.org/packages/community/any/screenfetch/">screenfetch</a> - prints out system information
-						</li>
-						<li>
-						<a class="about_links" href="https://wiki.archlinux.org/index.php/xrandr">xrandr</a> - allows for screen output (multiple monitors)
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/ttf-iosevka">Iosevka</a> - best terminal font
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/polybar/">polybar</a> - a fast and easy-to-use status bar
-						</li>
-						<li>
-						<a class="about_links" href="https://www.passwordstore.org/">pass</a> - a unix password manager
-						</li>
-						<li>
-						<a class="about_links" href="https://wiki.archlinux.org/index.php/powertop">powertop</a> - powersaving tool by Intel
-						</li>
-						<li>
-						<a class="about_links" href="https://aur.archlinux.org/packages/rstudio-desktop-bin/">RStudio</a> - the one and only IDE for R
-						</li>
-
-					</ul>
-					
+	<header>
+		<nav class="nav">
+			<div class="nav-container">
+				<div class="nav-header">
+					<a class="nav-title" href="index.html">Josh Keating</a>
 				</div>
-
-			</article>
-			<br>
-			<br>
-
+				<div class="links-container">
+					<ul class="nav-links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="https://github.com/joshkeating">Github</a></li>
+					</ul>
+				</div>
 			</div>
-			
+		</nav>
+	</header>
+
+	<main>
+
+		<div class="content-container">
+			<div class="content">
+				<div class="post_container">
+					<article class="article_body_container">
+						<header>
+							<div class="article-header">
+								<h2 class="article-title">
+									Arch Linux
+								</h2>
+								<div class="title_underline"></div>
+								<p class="article-date">
+									August 12th, 2016
+								</p>
+							</div>
+						</header>
+
+						<div class="article-content">
+							<p>
+								Arch Linux is the GNU/Linux distribution (distro) that I use as my main operating system. Arch is a minimal and
+								lightweight distro that can be
+								configured by the user to suit their preferences. This is at odds with some of the other popular distributions
+								(Ubuntu) which tend to feature more
+								streamlined installations and pre-configured environments.
+								<br>
+								<br>
+								Arch functions on a rolling release system of updates - meaning it gets updates to packages and the kernel much
+								faster than other distros.
+								Because of this it is often referred to as the “bleeding edge distro”. Thankfully, Arch comes with its own
+								package manager which makes managing
+								and maintaining your installed packages simple and easy. Arch is a great distro for someone who is comfortable
+								with how Linux works and likes the
+								“Do it yourself approach”.
+							</p>
+							<h4 class="article-subheading">
+								Reasons For Chooseing Arch
+							</h4>
+							<p>
+								I chose Arch because I wanted something fast and lightweight to run on my laptop (XPS 13). I really liked the
+								idea of a minimal base system that could then
+								be configured to my own ideal environment at an incredibly granular level. Forsaking the ease of use that a
+								distro built around a GUI provides has increased
+								my productivity in the terminal and taught me more about how my system functions - which has been great. The
+								documentation that the <a class="about_links" href="https://wiki.archlinux.org/">wiki</a> provides
+								is some of the best out there for Linux distros so that was another major influence in my decision.
+								<br>
+								<br>
+								Pacman is a great package manager that couples simple binary packages with an easy-to-use package build system.
+								This combined with the <code class="inlinecode">[core]</code> repositories,
+								the <a class="about_links" href="https://aur.archlinux.org/">AUR</a> (Arch Linux User Repository), and the
+								ability to easily “roll your own” packages makes for a fantastic system of managing and customizing packages,
+								scripts, and repositories.
+								<br>
+								<br>
+								Arch’s power and simplicity appealed to me and although the initial install was <strike>a failure</strike>
+								difficult, it has been a great operating system for more than a year.
+							</p>
+							<h4 class="article-subheading">
+								My Setup
+							</h4>
+							<img class="img-responsive" src="resources/images/nov_desktop_scrot.png" alt="desktop screenshot">
+							<p>
+								<br>
+								<br>
+								Pictured above is what one of my desktops currently looks like. I’ve tried to keep my install fairly
+								lightweight, I use <a class="about_links" href="https://i3wm.org/">i3</a> for my windows manager, <a class="about_links"
+								 href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> for my terminal
+								emulator, and <a class="about_links" href="http://ranger.nongnu.org/">ranger</a> for my file browser. I get 7-8
+								hours of medium to heavy usage which is pretty solid and comparable to how it performs in Windows. Here are my
+								<a class="about_links" href="https://github.com/joshkeating/dotfiles">dotfiles</a> if you are interested.
+							</p>
+							<h4 class="article-subheading">
+								Favorite Packages
+							</h4>
+
+							<ul class="archlinks">
+								<li>
+									<a class="about_links" href="https://i3wm.org/">i3</a> - A great tiling windows manager
+								</li>
+								<li>
+									<a class="about_links" href="https://wiki.archlinux.org/index.php/Rxvt-unicode">urxvt</a> - terminal emulator
+								</li>
+								<li>
+									<a class="about_links" href="http://ranger.nongnu.org/">ranger</a> - file browser
+								</li>
+								<li>
+									<a class="about_links" href="https://davedavenport.github.io/rofi/">rofi</a> - application launcher, dmenu
+									replacement
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/visual-studio-code/">Visual Studio Code</a> -
+									text editor
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/yaourt/">yaourt</a> - pacman frontend
+								</li>
+								<li>
+									<a class="about_links" href="https://www.archlinux.org/packages/community/any/intellij-idea-community-edition/">Intellij
+										IDE</a> - best IDE
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/sublime-text-dev/">Sublime Text 3</a> - text
+									editor
+								</li>
+								<li>
+									<a class="about_links" href="https://cmus.github.io/">cmus</a> - terminal music player
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/gpmdp/">gpmdp</a> - Google Play desktop music
+									player
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/spotify/">Spotify</a> - music streaming
+									platform
+								</li>
+								<li>
+									<a class="about_links" href="https://www.archlinux.org/packages/community/x86_64/zathura/">zathura</a> -
+									lightweight pdf viewer
+								</li>
+								<li>
+									<a class="about_links" href="https://wiki.archlinux.org/index.php/feh">feh</a> - lightweight image viewer
+								</li>
+								<li>
+									<a class="about_links" href="https://www.archlinux.org/packages/community/any/screenfetch/">screenfetch</a> -
+									prints out system information
+								</li>
+								<li>
+									<a class="about_links" href="https://wiki.archlinux.org/index.php/xrandr">xrandr</a> - allows for screen
+									output (multiple monitors)
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/ttf-iosevka">Iosevka</a> - best terminal font
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/polybar/">polybar</a> - a fast and easy-to-use
+									status bar
+								</li>
+								<li>
+									<a class="about_links" href="https://www.passwordstore.org/">pass</a> - a unix password manager
+								</li>
+								<li>
+									<a class="about_links" href="https://wiki.archlinux.org/index.php/powertop">powertop</a> - powersaving tool by
+									Intel
+								</li>
+								<li>
+									<a class="about_links" href="https://aur.archlinux.org/packages/rstudio-desktop-bin/">RStudio</a> - the one
+									and only IDE for R
+								</li>
+
+							</ul>
+
+						</div>
+
+					</article>
+				</div>
+			</div>
 		</div>
 
+	</main>
 
-	</div>
 
 	<footer class="footer">
-            <p class="footer_text">© 2018 Joshua Keating. All rights reserved.</p>
-    </footer>
+		<p class="footer_text">© 2018 Joshua Keating. All rights reserved.</p>
+	</footer>
 
 </body>
 

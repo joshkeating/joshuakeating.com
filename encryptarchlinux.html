@@ -3,14 +3,10 @@
 <head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- css -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<!-- cdns -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 		<!-- favicons and icons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/apple-touch-icon.png">
@@ -26,24 +22,28 @@
 
 <body>
 
-	<nav class="navbar">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Josh Keating</a>
-			</div>
-			<div class="collapse in" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about.html">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="https://github.com/joshkeating">Github</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid text-center">
-		<div class="row content">
-			
-			<div class="col-sm-8">
+		<header>
+				<nav class="nav">
+					<div class="nav-container">
+						<div class="nav-header">
+							<a class="nav-title" href="index.html">Josh Keating</a>
+						</div>
+						<div class="links-container">
+							<ul class="nav-links">
+								<li><a href="about.html">About</a></li>
+								<li><a href="resume.html">Resume</a></li>
+								<li><a href="https://github.com/joshkeating">Github</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+		
+			<main>
+				<div class="content-container">
+					<div class="content">
+						<div class="post_container">
+		
 
 			<article class="article_body_container">
 				<header>
@@ -214,6 +214,7 @@ options cryptdevice=UUID=(UUID goes here):VirtVol root=/dev/mapper/VirtVol-root 
 
 
 	</div>
+	</main>
 
 	<footer class="footer">
             <p class="footer_text">© 2018 Joshua Keating. All rights reserved.</p>

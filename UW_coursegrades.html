@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- cdns -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	<!-- favicons and icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="./resources/icons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./resources/icons/android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon-16x16.png">
 	<!-- url color for android -->
@@ -28,66 +25,81 @@
 
 <body>
 
-	<nav class="navbar">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Josh Keating</a>
+
+	<header>
+		<nav class="nav">
+			<div class="nav-container">
+				<div class="nav-header">
+					<a class="nav-title" href="index.html">Josh Keating</a>
+				</div>
+				<div class="links-container">
+					<ul class="nav-links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="https://github.com/joshkeating">Github</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="collapse in" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about.html">About</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="https://github.com/joshkeating">Github</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid text-center">
-		<div class="row content">
-			
-			<div class="col-sm-8">
+		</nav>
+	</header>
 
-			<article class="article_body_container">
-				<header>
-					<div class="article-header">
-						<h2 class="article-title">
-							UW Course Grades Visualization
-						</h2>
-						<div class="title_underline"></div>
-						<p class="article-date">
-							Dec 10, 2016
-						</p>	
-					</div>
-				</header>
+	<main>
+		<div class="content-container">
+			<div class="content">
+				<div class="post_container">
 
-				<div class="article-content">
-					<p>
-                        This was an end of course project that I worked with a team on for Info 201 (Technical Foundations).  Using a dataset comprised of 
-                        the anonymized grade data from every class taught at the University of Washington (Seattle) from Autumn 2010 to Winter 2016, we built 
-                        an interactive web application. To manipulate the (relatively large ~40,000 lines, 20 features) dataset I used R to wrangle and filter the data
-                        into subsets that could be visualized. We used Shiny to create a reactive user interface that allows the user to filter the  data for a specific class
-                        and display interactive visualizations.
-                    </p>
+					<article class="article_body_container">
+						<header>
+							<div class="article-header">
+								<h2 class="article-title">
+									UW Course Grades Visualization
+								</h2>
+								<div class="title_underline"></div>
+								<p class="article-date">
+									Dec 10, 2016
+								</p>
+							</div>
+						</header>
 
-                    <h4 class="article-subheading">
-						Motivations
-					</h4>
-                    <p>
-                        When deciding what kind of dataset to tackle, we came to the conclusion that we wanted to work with a dataset that 
-                        would be relevant to current University of Washington students.  After searching around we stumbled upon this particular dataset
-                        and were intrigued.  It was relevant (because who wants to take a class with an unnecessarily tough teacher) and it was more than complex enough.
-                        Specifically, we were most interested in the distribution and breakdown of the letter grades within each class. The data is anonymized and could 
-                        be manipulated to highlight features that are important to current UW students.
-                    </p>
+						<div class="article-content">
+							<p>
+								This was an end of course project that I worked with a team on for Info 201 (Technical Foundations). Using a
+								dataset comprised of
+								the anonymized grade data from every class taught at the University of Washington (Seattle) from Autumn 2010 to
+								Winter 2016, we built
+								an interactive web application. To manipulate the (relatively large ~40,000 lines, 20 features) dataset I used
+								R to wrangle and filter the data
+								into subsets that could be visualized. We used Shiny to create a reactive user interface that allows the user
+								to filter the data for a specific class
+								and display interactive visualizations.
+							</p>
 
-                    <h4 class="article-subheading">
-						How We Built It
-					</h4>
-                    <p>
-                       To manipulate the data I used the excellent <a class="about_links" href="https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html">dplyr</a> package which was 
-					   nested inside a <a class="about_links" href="http://shiny.rstudio.com/">Shiny</a> reactive function. This allowed user inputs to filter the data on the fly.  Changing the dataset dynamically 
-					   based on user input and then displaying it over on the UI turned out to be tougher than I expected but this was the code that got it to work.
-					   <pre class="codeblock">
+							<h4 class="article-subheading">
+								Motivations
+							</h4>
+							<p>
+								When deciding what kind of dataset to tackle, we came to the conclusion that we wanted to work with a dataset
+								that
+								would be relevant to current University of Washington students. After searching around we stumbled upon this
+								particular dataset
+								and were intrigued. It was relevant (because who wants to take a class with an unnecessarily tough teacher) and
+								it was more than complex enough.
+								Specifically, we were most interested in the distribution and breakdown of the letter grades within each class.
+								The data is anonymized and could
+								be manipulated to highlight features that are important to current UW students.
+							</p>
+
+							<h4 class="article-subheading">
+								How We Built It
+							</h4>
+							<p>
+								To manipulate the data I used the excellent <a class="about_links" href="https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html">dplyr</a>
+								package which was
+								nested inside a <a class="about_links" href="http://shiny.rstudio.com/">Shiny</a> reactive function. This
+								allowed user inputs to filter the data on the fly. Changing the dataset dynamically
+								based on user input and then displaying it over on the UI turned out to be tougher than I expected but this was
+								the code that got it to work.
+								<pre class="codeblock">
 # initalize Shiny text input widget
 output$value <&#45; renderPrint({ input$text })
 
@@ -99,32 +111,33 @@ datasetInput <&#45; reactive({
 
 	return trimmed.course
 })</pre>
-						This returns a dataframe that can be passed into a render function on the server side: <code class="inlinecode">output$plot <&#45; renderPlotly({ggplotly(datasetInput())})</code> and then
-						 passed into an output over in the UI.
-					</p>
+								This returns a dataframe that can be passed into a render function on the server side: <code class="inlinecode">output$plot <&#45; renderPlotly({ggplotly(datasetInput())})</code>
+								and then
+								passed into an output over in the UI.
+							</p>
 
-						
-					<p>
-					   To build the plot I used the  <a class="about_links" href="https://plot.ly/">plotly</a> library which
-					   does a great job of creating beautiful interactive visualizations. We set up a Shiny server thanks to the free hosting that they offer so that anyone with an internet connection can take a look at what we made.
-					   You can check the site <a class="about_links" href="https://joshkeating.shinyapps.io/info-201-coursegrades/">here</a> and the source <a class="about_links" href="https://github.com/joshkeating/info-201-coursegrades">here</a>.
-                    </p>
-					<img class="img-responsive" src="resources/images/grades-lineplot.png" alt="Grade Distribution Plot">
-					<br>
-					<br>
+
+							<p>
+								To build the plot I used the <a class="about_links" href="https://plot.ly/">plotly</a> library which
+								does a great job of creating beautiful interactive visualizations. We set up a Shiny server thanks to the free
+								hosting that they offer so that anyone with an internet connection can take a look at what we made.
+								You can check the site <a class="about_links" href="https://joshkeating.shinyapps.io/info-201-coursegrades/">here</a>
+								and the source <a class="about_links" href="https://github.com/joshkeating/info-201-coursegrades">here</a>.
+							</p>
+							<img class="img-responsive" src="resources/images/grades-lineplot.png" alt="Grade Distribution Plot">
+							<br>
+							<br>
+						</div>
+
+					</article>
+
 				</div>
-
-			</article>
-
 			</div>
-			
 		</div>
-
-	</div>
-
+	</main>
 	<footer class="footer">
-            <p class="footer_text">© 2018 Joshua Keating. All rights reserved.</p>
-    </footer>
+		<p class="footer_text">© 2018 Joshua Keating. All rights reserved.</p>
+	</footer>
 
 </body>
 
