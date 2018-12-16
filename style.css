@@ -499,12 +499,11 @@ a.index_article_link:active {
 .codeblock {
 	font-family: 'Inconsolata', monospace;
 	font-size: 0.9em;
-	background-color: #EEEEEE;
+	background-color: #f7f7f7;;
     box-sizing: border-box;
-    border: 1px solid #A6A6A6;
-    border-radius: 3px;
     margin: 1rem 0;
-    padding: 0.35rem 0.5rem;
+	padding: 13px 12px;
+	color: #333;
 }
 
 .archlinks {
