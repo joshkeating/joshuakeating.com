@@ -1,15 +1,25 @@
 
-/*------------Begin Footer----------*/
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-	margin-bottom: 60px;
+	margin-bottom: 60px;  
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
 	background-color: #f9f9fa;
+	box-sizing: border-box;
+
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
 }
-.footer {
+
+/*------------Begin Footer----------*/
+
+footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -17,7 +27,8 @@ body {
   height: 60px;
   background-color: #f9f9fa;
 }
-.footer_text {
+
+p.footer_text {
 	text-align: center;
     padding: 0 20px;
     margin: 20px;
@@ -26,9 +37,149 @@ body {
     align-items: center;
 		color: #6b6b6b;
 }
+
 /*------------End Footer----------*/
 	
-.navbar {	
+
+
+
+.nav {
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 0;
+	background-color: #f9f9fa;
+	max-width: 940px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	border: 0px;
+	display: block;
+	height: 80px;
+  }
+
+  div.nav-container {
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+  }
+
+  .nav-container > .nav-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+  
+
+  .nav-header {
+	float: left;
+	box-sizing: border-box;
+  }
+  
+
+  .nav-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color: #222222;
+	font-size: 2.65em;
+	background-color: #f9f9fa;
+	transition-property: background-color;
+	transition-duration: 0.18s;
+	transition-delay: 0s;
+	transition-timing-function: ease;
+	float: left;
+	height: 50px;
+	padding: 15px 15px;
+  }
+  
+  .nav-title:hover {
+	border-radius: 8px;
+	background-color: #e5e5e5;
+	color: #0A84EF;
+}
+
+.links-container {
+	display: block;
+
+}
+
+.nav-links {
+	background-color: #f9f9fa;
+	min-height: 80px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.56em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: right !important;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.nav-links > li {
+	float: left;
+    position: relative;
+    display: block;
+}
+
+.nav-links > li > a {
+	transition-property: background-color;
+	transition-duration: 0.18s;
+	transition-delay: 0s;
+	transition-timing-function: ease;
+	margin-left: 15px;
+
+	line-height: 20px;
+	position: relative;
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.nav-links > li > a:hover {
+	border-radius: 5px;
+	background-color: #e5e5e5;
+	color: #0A84EF;
+}
+
+
+div.content-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+ 
+  
+  /* .nav-links {
+	
+	font-size: 18px;
+	background-color: #f9f9fa;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.56em;
+  }
+  
+  .nav-links > a {
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	color: #222222;
+
+  }
+
+  .nav-links a:hover {
+	border-radius: 5px;
+	background-color: #e5e5e5;
+	color: #0A84EF;
+} */
+  
+
+
+
+
+
+/* .navbar {	
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 0;
@@ -39,7 +190,6 @@ body {
 	border: 0px;
 }
 
-/* name nav */
 .navbar-brand {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
@@ -61,7 +211,6 @@ body {
 	color: #0A84EF;
 }
 
-/*right nav*/
 .nav {
 	background-color: #f9f9fa;
 	min-height: 80px;
@@ -85,9 +234,9 @@ body {
 	border-radius: 5px;
 	background-color: #e5e5e5;
 	color: #0A84EF;
-}
+} */
 
-.col-sm-8 {
+.post_container {
 	width: auto;
 	text-align: left;
 	max-width: 940px;
@@ -95,11 +244,12 @@ body {
 	margin-left: auto;
 	padding-right: 0px;
 	padding-left: 0px;
-	float: none;
+	position: relative;
+	min-height: 1px;
 	
 }
 
-.row.content {
+div.content {
 	width: 100%;
 	max-width: 940px;
 	margin-right: auto;
@@ -121,7 +271,8 @@ a {
 	color: #222222;
 	transition-duration: 150ms;
     transition-timing-function: ease;
-    transition-delay: 0s;
+	transition-delay: 0s;
+	text-decoration: none;
 }
 
 a:hover {
@@ -479,7 +630,7 @@ a.index_article_link:active {
 			margin-left: 0px;;
 		}
 
-		.col-sm-8 {
+		.post_container {
 			width: auto;
 			font-size: 85%;
 			padding-right: 0px;
@@ -534,9 +685,8 @@ a.index_article_link:active {
 			height: auto;
 		}
 
-		.row.content {
+		div.content {
 			height:auto;
-
 		}
 
 		/* display shadow for links on mobile */
