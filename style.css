@@ -443,6 +443,8 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.9em;
 	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
 
 /*---------------------------article-content---------------------------------------*/
