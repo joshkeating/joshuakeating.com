@@ -548,6 +548,8 @@ a.index_article_link:active {
 		min-height: 0px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		padding-left: 0px;
+		padding-right: 0px;
 		font-size: 1.8em;
 		width: 100%;
 		background-color: #0A84EF;
