@@ -110,7 +110,7 @@
 pd.options.mode.chained_assignment = None
 df['review_scores_rating'] = df.review_scores_rating.fillna(df.review_scores_rating.median())</pre>
                             <p>
-                                Because a some of the significant features were categorical variables with a large
+                                Because some of the significant features were categorical variables with a large
                                 number of values, I needed to convert them to dummy variables so that they could be
                                 used in a regression. This became an issue because of the quantity of unique categories
                                 that some features contained. When converting to dummy variables using all those
