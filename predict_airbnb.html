@@ -54,7 +54,7 @@
                 As alluded to above, I chose this dataset because I knew I would be able to make use of
                 a number of machine learning regression algorithms to help me predict the price of
                 Airbnb listings. After trawling through the datasets that Kaggle had to offer, I
-                settled on <a class="about_links" href="https://www.kaggle.com/airbnb/seattle#listings.csv">this</a>
+                settled on <a class="std-link" href="https://www.kaggle.com/airbnb/seattle#listings.csv">this</a>
                 one. It included an impressive amount of features related to each
                 property as well as metadata about the host. All of this data was obtained through an
                 extensive web scrape of the Airbnb site. Besides the quantity of features available,
@@ -97,7 +97,7 @@ df['review_scores_rating'] = df.review_scores_rating.fillna(df.review_scores_rat
                 scope of the neighborhood feature to use the generalized neighborhood zones like
                 Capitol Hill and University District.
             </p>
-            <p>The methods I used to clean the data can be viewed in their entirety within <a class="about_links"
+            <p>The methods I used to clean the data can be viewed in their entirety within <a class="std-link"
                     href="https://github.com/joshkeating/inf370-final-project/blob/master/clean-data.ipynb">this</a>
                 python jupyter notebook.
             </p>
@@ -108,7 +108,7 @@ df['review_scores_rating'] = df.review_scores_rating.fillna(df.review_scores_rat
                 I was also interested to see if the description the listing written by the host had an
                 impact on the price of that listing. More sepectivally, I wanted to see if the textual
                 sentiment of the listing description had an affect on the price. To add this feature to
-                the dataset we used the <a class="about_links"
+                the dataset we used the <a class="std-link"
                     href="https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/">Microsoft
                     Azure Text Sentiment Analysis API</a> with Postman requests
                 to send the text of each description to Microsoft for sentiment analysis. With these
@@ -158,7 +158,7 @@ mod1.summary()</pre>
                 To predict the price of a listing I used the process of splitting our data into train
                 and
                 test sets, building data pipelines, and predicting using various machine learning
-                algorithms. All of the algorithms I used were from the popular <a class="about_links"
+                algorithms. All of the algorithms I used were from the popular <a class="std-link"
                     href="https://scikit-learn.org/stable/index.html">sklearn</a> package.
             </p>
             <pre class="codeblock">
@@ -260,10 +260,10 @@ violin_plot = sns.violinplot(x="property_type", y="error", data=res)</pre>
                 Project Resources
             </h2>
             <p>
-                The code used for this project is published on Github <a class="about_links"
+                The code used for this project is published on Github <a class="std-link"
                     href="https://github.com/joshkeating/inf370-final-project">here</a>.
                 You can read the full paper
-                that I co-authored about this work <a class="about_links"
+                that I co-authored about this work <a class="std-link"
                     href="./resources/files/airbnb-paper.pdf">here</a>.
             </p>
         </article>
