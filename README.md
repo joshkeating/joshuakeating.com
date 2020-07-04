@@ -1,7 +1,11 @@
 # Personal Website
 
-Made with pure `HTML` and `CSS` because you shouldn't need to use Javascript for a site like this.
+Generated `html` from [sssgr](https://github.com/joshkeating/sssgr) + a static(ish) resources dir for images and other assets.
 
-No frontend frameworks or Google analytics == no bullshit. The only CDN calls that are made are for fonts.
+### "Standard" web tech that this site doesn't use:
 
-Only tested on Gecko and Blink based browsers, if you're using IE, treat yourself to a modern web browser.
+(for a better browsing experience)
+
+- Javascript
+- Google Analytics
+- External fonts
