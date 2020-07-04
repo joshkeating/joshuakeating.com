@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "window.zoomLevel": 0,
-    "editor.fontFamily": "'Roboto Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "java.home": "/usr/lib/jvm/java-8-openjdk"
+    "editor.fontFamily": "'Roboto Mono', 'Courier New', monospace, 'Droid Sans Fallback'"
 }
