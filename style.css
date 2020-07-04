@@ -7,12 +7,10 @@
 	--code-bg-color: #f7f7f7;
 	--max-page-width: 720px;
 }
-
 html {
   position: relative;
   min-height: 100%;
 }
-
 body {
 	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 	font-size: 0.9em;
@@ -22,8 +20,7 @@ body {
 	max-width: var(--max-page-width);
 }
 
-/*------------Begin Footer----------*/
-
+/*footer*/
 footer p {
 	margin: 1em 0 1em 0;
 	padding: 0 1em 0 1em;
@@ -32,11 +29,7 @@ footer p {
 	color: var(--grayish-color);
 }
 
-/*------------End Footer----------*/
-	
-
-/*------------Begin Header----------*/
-
+/*header*/
 header {
 	padding: 1em;
 	margin: 1.5em 0 1.5em 0; 
@@ -45,7 +38,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
-
 a.header-name {
 	font-size: 1.4em;
 	font-weight: bold;
@@ -55,15 +47,12 @@ a.header-name {
     transition-timing-function: ease;
 	transition-delay: 0s;
 }
-
 a.header-name:hover {
 	color: var(--primary-color);
 }
-
 .header-links-container {
     white-space: nowrap;
 }
-
 .header-links-container a {
 	font-size: 1.2em;
 	margin-left: 1.4em;
@@ -73,26 +62,19 @@ a.header-name:hover {
     transition-timing-function: ease;
 	transition-delay: 0s;
 }
-
 .header-links-container a:hover {
 	color: var(--primary-color);
 }
 
-/*------------End Header----------*/
-
-
-/*------------Begin Main----------*/
-
+/*main-*/
 main {
 	padding: 0 1em 0 1em; 
 }
-
 li.article-card {
 	list-style-type: none;
 	margin: 1em 0 1em 0;
 	display: block;
 }
-
 a.article-card-link {
 	display: inherit;
 	box-sizing: inherit;
@@ -101,39 +83,32 @@ a.article-card-link {
     transition-timing-function: ease;
     transition-delay: 0s;
 }
-
 a.article-card-link:hover {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
 }
-
 article.article-card-container {
 	padding: 2px 1em 2px 1em;
 }
-
 h3.article-card-title {
 	font-size: 1.4em;
 	color: var(--font-color);
 	margin-bottom: 6px;
 	margin-top: 20px;
 }
-
 div.article-card-date {
 	font-size: 1.1em;
 	color: var(--grayish-color);
 }
-
 p.article-card-body {
 	font-size: 1em;
 	color: var(--font-color);
 	padding: 10px 0 10px 0;
 	margin: 0 0 10px 0;
 }
-
 div.see-all {
 	margin: 1em 0 1em 0;
 	padding: 1em 0 1em 0;
 }
-
 div.see-all a {
 	font-size: 1.2em;
 	text-decoration: none;
@@ -142,20 +117,14 @@ div.see-all a {
     transition-timing-function: ease;
 	transition-delay: 0s;
 }
-
 div.see-all a:hover {
 	color: var(--primary-color);
 }
 
-/*------------End Main----------*/
-
-
-/*------------Begin Std Post----------*/
-
+/*Std Post*/
 div.post-header-container {
 	margin-bottom: 2em;
 }
-
 h1.post-title {
 	font-size: 3em;
 	letter-spacing: -0.03em;
@@ -163,39 +132,31 @@ h1.post-title {
 	margin-bottom: 0.2em;
 	line-height: 1.1;
 }
-
 div.post-date {
 	font-size: 1.2em;
 	color: var(--grayish-color);
 }
-
 article.post-content {
 	line-height: 1.75;
 }
-
 p {
 	font-size: 1em;
 	margin-bottom: 1.5em;
 }
-
 a.std-link:before {
 	color: var(--primary-color);
 }
-
 a.std-link:visited {
 	color: var(--secondary-color);
 }
-
 h2.post-subheading { 
 	margin-bottom: 0.3em;
     margin-top: 2.1em;
 }
-
 img.img-responsive {
 	width: 100%;
   	height: auto;
 }
-
 code.inlinecode {
 	font-family: 'Courier New', Courier, monospace;
 	background-color: var(--code-bg-color);
@@ -204,7 +165,6 @@ code.inlinecode {
     border-radius: 3px;
 	color: var(--font-color);
 }
-
 pre.codeblock {
 	font-family: 'Courier New', Courier, monospace;
 	background-color: var(--code-bg-color);
@@ -213,7 +173,6 @@ pre.codeblock {
 	padding: 1em;
 	color: var(--font-color);
 }
-
 /* make preformatted code wrap correctly */
 pre {
     white-space: pre-wrap;       /* Since CSS 2.1 */
@@ -222,5 +181,3 @@ pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
-
-/*------------End Std Post----------*/
